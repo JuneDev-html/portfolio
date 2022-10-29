@@ -159,7 +159,7 @@ body {
 
 .about-wrap{
     justify-self: right;
-    max-width: 200px;
+    /* max-width: 200px; */
 }
 
 .widgets h3 {
@@ -167,10 +167,10 @@ body {
 }
 
 .about-wrap .about {
-    
     background-color: transparent;
     line-height: 25px;
     letter-spacing: 1px;
+    max-width: 200px;
 }
 
 @font-face {
