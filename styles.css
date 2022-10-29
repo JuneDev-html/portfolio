@@ -140,8 +140,7 @@ body {
 .projects-container a {
     text-decoration: none;
     color:#1e293b;
-    font-size: 18px;
-    font-weight: 800px;
+  
     
 }
 
@@ -160,6 +159,12 @@ body {
 .card:hover {
     transform: scale(1.05);
     box-shadow: 4px 15px 35px 2px #47556949;
+}
+
+.projects-container a p {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 .calculator {
