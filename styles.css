@@ -6,12 +6,12 @@ body {
     place-items: center;
     height: 98vh;
     color: #1e293b;
-    
+    transform: 1s;
 }
 
 .container {
     border: 1px solid #475569;
-    background: linear-gradient(135deg, #fff, #cbd5e1);
+    background: linear-gradient(135deg, #fff, #e2e8f0, #94a3b8);
     border-radius: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -136,6 +136,14 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 12px;
     padding-right: 20px;
+}
+
+.projects-container a {
+    text-decoration: none;
+    color:#1e293b;
+    font-size: 18px;
+    font-weight: 800px;
+    
 }
 
 .card {
