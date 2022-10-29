@@ -142,6 +142,9 @@ body {
     background-color: #f8fafc;
     padding: 30px 20px;
     border-radius: 10px;
+    display: flex;
+    place-items: center;
+    text-align: center;
 }
 
 /* widgets section */
@@ -162,15 +165,18 @@ body {
     /* max-width: 200px; */
 }
 
-.widgets h3 {
-    margin-bottom: 0px;
-}
+
 
 .about-wrap .about {
     background-color: transparent;
     line-height: 25px;
     letter-spacing: 1px;
-    max-width: 200px;
+    /* max-width: 200px; */
+}
+
+.about h3,
+.about p {
+    margin: 0px;
 }
 
 @font-face {
