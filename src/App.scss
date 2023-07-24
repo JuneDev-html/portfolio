@@ -1,0 +1,99 @@
+@import './styles/variables';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  /* padding: 20px; */
+}
+
+.page {
+  // border: 2px solid red;
+  height: 100%;
+  display: flex;
+  z-index: 0;
+  position: relative;
+  background-color: $dark-mode-bg;
+  color: $dark-mode-text;
+  transition: 0.5s ease-in-out;
+
+  &.light {
+    color: $light-mode-text;
+    background-color: $light-mode-bg;
+    transition: all 0.5s ease-in-out;
+
+    .wrap {
+      border: $light-mode-border;
+
+      .particle-container {
+        border: $light-mode-border;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.modes {
+  display: flex;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 90px;
+  left: -25px;
+
+  p {
+    margin-right: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.wrap {
+  flex: 1;
+  height: 95%;
+  margin: 25px;
+  border: $dark-mode-border;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  transition: border 0.5s ease-in-out;
+}
+
+.particle-container {
+  height: 100%;
+  width: 100%;
+  border: $dark-mode-border;
+  position: absolute;
+  transform: translateX(-450px) translateY(100px) rotate(45deg);
+  z-index: -1;
+  transition: border 0.5s ease-in-out;
+}
+
+#tsparticles {
+  height: 100%;
+}
+
+header {
+  height: 300px;
+  padding: 30px;
+}
+
+.title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
