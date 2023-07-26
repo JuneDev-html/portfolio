@@ -1,8 +1,15 @@
 import '../../styles/home.scss';
+// import transition from '../../transition';
+import { motion } from 'framer-motion';
 
-export const Home = () => {
+const Home = () => {
   return (
-    <section className='home'>
+    <motion.div
+      className='home'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <p className='aboutme'>
         Born in 1991 <br />
         in Goiânia, Brazil. <br />
@@ -23,6 +30,8 @@ export const Home = () => {
         new experiments <br />
         and ideas. <br />
       </p>
-    </section>
+    </motion.div>
   );
 };
+
+export default Home;

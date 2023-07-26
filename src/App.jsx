@@ -1,13 +1,17 @@
 import './App.scss';
 import React from 'react';
 import { Particle } from './components/Particle';
-import { Route, Routes } from 'react-router-dom';
-import { Home } from './pages/home/Home';
-import { Info } from './pages/info/Info';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
+import { AnimatePresence } from 'framer-motion';
+import Home from './pages/home/Home';
+import Info from './pages/info/Info';
+import Projects from './pages/projects/Projects';
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
+
+  const location = useLocation();
 
   const toggleDark = (mode) => {
     setDarkMode(mode);
@@ -25,12 +29,14 @@ function App() {
           <Navigation />
         </header>
         <section className='pages'>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/projects' element={<Home />} />
-            <Route path='/info' element={<Info darkMode={darkMode} />} />
-            <Route path='/contact' element={<Home />} />
-          </Routes>
+          <AnimatePresence mode='wait'>
+            <Routes location={location} key={location.pathname}>
+              <Route path='/' element={<Home />} />
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/info' element={<Info darkMode={darkMode} />} />
+              <Route path='/contact' element={<Home />} />
+            </Routes>
+          </AnimatePresence>
         </section>
       </div>
       <section>

@@ -1,10 +1,16 @@
 /* eslint-disable react/prop-types */
 import '../../styles/info.scss';
 import arrow from '../../assets/arrow.svg';
+import { motion } from 'framer-motion';
 
-export const Info = ({ darkMode }) => {
+const Info = ({ darkMode }) => {
   return (
-    <div className='info'>
+    <motion.div
+      className='info'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className='info-container'>
         <section className='social'>
           <a href='#' className='social-link'>
@@ -46,6 +52,8 @@ export const Info = ({ darkMode }) => {
           </ul>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
+
+export default Info;
