@@ -1,4 +1,5 @@
-import React, { useCallback } from 'react';
+/* eslint-disable react/prop-types */
+import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 // import { loadSlim } from 'tsparticles-slim';

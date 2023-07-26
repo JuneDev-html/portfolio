@@ -1,7 +1,8 @@
 @import './styles/variables';
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -44,7 +45,7 @@ body {
   transform: rotate(-90deg);
   position: absolute;
   bottom: 90px;
-  left: -25px;
+  left: -15px;
 
   p {
     margin-right: 10px;
@@ -57,8 +58,7 @@ body {
 
 .wrap {
   flex: 1;
-  height: 95%;
-  margin: 25px;
+  margin: 35px;
   border: $dark-mode-border;
   overflow: hidden;
   display: flex;
@@ -80,19 +80,25 @@ body {
   height: 100%;
 }
 
+.pages {
+  flex: 1;
+}
+
 header {
   height: 300px;
   padding: 30px;
+  // border: 2px dashed red;
+  position: absolute;
 }
 
 .title {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 200;
   letter-spacing: 3px;
   margin-bottom: 0;

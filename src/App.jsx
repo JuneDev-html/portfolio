@@ -1,18 +1,17 @@
 import './App.scss';
 import React from 'react';
 import { Particle } from './components/Particle';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './pages/home/Home';
+import { Info } from './pages/info/Info';
+import { Navigation } from './components/Navigation';
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
 
   const toggleDark = (mode) => {
-    console.log('darkMode: ', mode);
     setDarkMode(mode);
   };
-
-  // React.useEffect(() => {
-  //   console.log('rendered');
-  // }, [darkMode]);
 
   return (
     <div className={darkMode ? 'page' : 'page light'}>
@@ -22,8 +21,17 @@ function App() {
         </div>
         <header>
           <h1 className='name'>June DaSilva</h1>
-          <p className='title'>Designer & Developer</p>
+          <p className='title'>Fullstack Developer</p>
+          <Navigation />
         </header>
+        <section className='pages'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/projects' element={<Home />} />
+            <Route path='/info' element={<Info darkMode={darkMode} />} />
+            <Route path='/contact' element={<Home />} />
+          </Routes>
+        </section>
       </div>
       <section>
         <div className='modes'>
