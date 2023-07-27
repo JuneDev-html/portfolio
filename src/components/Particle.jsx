@@ -2,7 +2,6 @@
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-// import { loadSlim } from 'tsparticles-slim';
 
 export const Particle = ({ darkMode }) => {
   const particlesInit = useCallback(async (engine) => {
@@ -21,7 +20,6 @@ export const Particle = ({ darkMode }) => {
   return (
     <Particles
       id='tsparticles'
-      // url='http://foo.bar/particles.json'
       init={particlesInit}
       loaded={particlesLoaded}
       options={{

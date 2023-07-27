@@ -1,7 +1,6 @@
 @import './styles/variables';
 
 :root {
-  // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -11,7 +10,6 @@ body {
 
 #root {
   height: 100vh;
-  /* padding: 20px; */
 }
 
 .page {
@@ -40,18 +38,42 @@ body {
   }
 }
 
-.modes {
+.modes-container {
   display: flex;
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 90px;
-  left: -15px;
+  bottom: 120px;
+  left: -35px;
 
-  p {
-    margin-right: 10px;
+  .modes {
+    display: flex;
 
     &:hover {
       cursor: pointer;
+    }
+
+    p {
+      margin: 0;
+      margin-right: 10px;
+    }
+
+    .mode-box {
+      margin: 0 5px;
+      border: $light-mode-border;
+      width: 10px;
+      height: 10px;
+
+      &.dark-active {
+        border: $dark-mode-border;
+      }
+    }
+
+    .mode-box.light {
+      background-color: $dark-mode-bg;
+    }
+
+    .mode-box.dark {
+      background-color: $light-mode-bg;
     }
   }
 }

@@ -40,9 +40,23 @@ function App() {
         </section>
       </div>
       <section>
-        <div className='modes'>
-          <p onClick={() => toggleDark(false)}>light</p>
-          <p onClick={() => toggleDark(true)}>dark</p>
+        <div className='modes-container'>
+          <div className='modes' onClick={() => toggleDark(false)}>
+            <div
+              className={
+                darkMode ? 'mode-box light dark-active' : 'mode-box light'
+              }
+            ></div>
+            <p>light</p>
+          </div>
+          <div className='modes' onClick={() => toggleDark(true)}>
+            <div
+              className={
+                darkMode ? 'mode-box dark dark-active' : 'mode-box dark'
+              }
+            ></div>
+            <p>dark</p>
+          </div>
         </div>
       </section>
     </div>

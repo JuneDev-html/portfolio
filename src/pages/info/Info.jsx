@@ -43,6 +43,7 @@ const Info = ({ darkMode }) => {
               className={darkMode ? 'link-arrow active' : 'link-arrow'}
             />
           </a>
+          <p className='email'>adasilva.html@gmail.com</p>
         </section>
         <section className='technologies'>
           <p>Recent technologies:</p>

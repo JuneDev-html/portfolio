@@ -1,5 +1,4 @@
 import '../../styles/home.scss';
-// import transition from '../../transition';
 import { motion } from 'framer-motion';
 
 const Home = () => {

@@ -14,9 +14,6 @@ export const Navigation = () => {
       <Link className='nav-link' to='/info'>
         Info
       </Link>
-      <Link className='nav-link' to='/contact'>
-        Contact
-      </Link>
     </nav>
   );
 };
