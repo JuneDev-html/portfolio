@@ -13,7 +13,10 @@ const Info = ({ darkMode }) => {
     >
       <div className='info-container'>
         <section className='social'>
-          <a href='#' className='social-link'>
+          <a
+            href='https://www.tiktok.com/@june.dasilva'
+            className='social-link'
+          >
             <p>TikTok</p>
             <img
               src={arrow}
@@ -21,7 +24,10 @@ const Info = ({ darkMode }) => {
               className={darkMode ? 'link-arrow active' : 'link-arrow'}
             />
           </a>
-          <a href='#' className='social-link'>
+          <a
+            href='https://www.youtube.com/@adasilvadev'
+            className='social-link'
+          >
             <p>Youtube</p>
             <img
               src={arrow}
@@ -29,7 +35,7 @@ const Info = ({ darkMode }) => {
               className={darkMode ? 'link-arrow active' : 'link-arrow'}
             />
           </a>
-          <a href='#' className='social-link'>
+          <a href='https://github.com/juneDaSilva' className='social-link'>
             <p>Github</p>
             <img
               src={arrow}

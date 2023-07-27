@@ -8,10 +8,14 @@
     text-decoration: none;
     color: inherit;
     line-height: 25px;
+    display: flex;
 
-    font-weight: 600;
-    font-size: 15px;
-    // transition: color 0.5s;
+    .page-name {
+      margin: 0;
+      margin-right: auto;
+      font-weight: 600;
+      font-size: 15px;
+    }
 
     &:hover {
       color: rgb(107, 107, 107);

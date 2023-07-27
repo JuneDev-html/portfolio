@@ -12,56 +12,56 @@ const Projects = () => {
       <ul className='project-list'>
         <li className='item'>
           <a
-            href='https://junedev-html.github.io/shopping-cart/'
+            href='https://juneDaSilva.github.io/shopping-cart/'
             className='project-title'
           >
             Espress Yourself
           </a>
           <p className='project-info'>
             React /
-            <a href='https://github.com/JuneDev-html/shopping-cart/blob/main/README.md'>
+            <a href='https://github.com/JuneDaSilva/shopping-cart/blob/main/README.md'>
               /aboutMe
             </a>
           </p>
         </li>
         <li className='item'>
           <a
-            href='https://junedev-html.github.io/battleship/'
+            href='https://juneDaSilva.github.io/battleship/'
             className='project-title'
           >
-            Battleship
+            BATTLESHIP
           </a>
           <p className='project-info'>
             vanillaJs /
-            <a href='https://github.com/JuneDev-html/battleship/blob/main/README.md'>
+            <a href='https://github.com/juneDaSilva/battleship/blob/main/README.md'>
               /aboutMe
             </a>
           </p>
         </li>
         <li className='item'>
           <a
-            href='https://junedev-html.github.io/to-do-list/'
+            href='https://JuneDaSilva.github.io/to-do-list/'
             className='project-title'
           >
-            Task Bee
+            TASK BEE
           </a>
           <p className='project-info'>
             vanillaJs /
-            <a href='https://github.com/JuneDev-html/to-do-list/blob/main/README.md'>
+            <a href='https://github.com/JuneDaSilva/to-do-list/blob/main/README.md'>
               /aboutMe
             </a>
           </p>
         </li>
         <li className='item'>
           <a
-            href='https://junedev-html.github.io/weather-app/'
+            href='https://JuneDaSilva.github.io/weather-app/'
             className='project-title'
           >
-            Weather App
+            WEATHER APP
           </a>
           <p className='project-info'>
             vanillaJs /
-            <a href='https://github.com/JuneDev-html/weather-app/blob/main/README.md'>
+            <a href='https://github.com/JuneDaSilva/weather-app/blob/main/README.md'>
               /aboutMe
             </a>
           </p>
