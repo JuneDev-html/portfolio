@@ -4,7 +4,7 @@ import App from './App';
 
 export const RouteSwitch = () => {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/shopping-cart/'}>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
       <App />
     </BrowserRouter>
   );
