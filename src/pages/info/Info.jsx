@@ -48,7 +48,8 @@ const Info = ({ darkMode }) => {
         <section className='technologies'>
           <p>Recent technologies:</p>
           <ul>
-            <li>Javascript</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>SCSS</li>
             <li>Jest</li>
             <li>React</li>
