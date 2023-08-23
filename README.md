@@ -1,3 +1,3 @@
-live: https://junedasilva.github.io/portfolio/projects
+live: https://junedasilva.github.io/portfolio
 
 <3
