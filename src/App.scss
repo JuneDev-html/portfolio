@@ -131,6 +131,9 @@ h1 {
 }
 
 @media screen and (max-width: 428px) {
+  header {
+    height: 200px;
+  }
   .particle-container {
     width: 250%;
     transform: translateX(-550px) translateY(300px) rotate(45deg);

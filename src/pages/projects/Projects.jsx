@@ -12,20 +12,6 @@ const Projects = () => {
       <ul className='project-list'>
         <li className='item'>
           <a
-            href='https://juneDaSilva.github.io/battleship/'
-            className='project-title'
-          >
-            BATTLESHIP
-          </a>
-          <p className='project-info'>
-            vanillaJs /
-            <a href='https://github.com/juneDaSilva/battleship/blob/main/README.md'>
-              /aboutMe
-            </a>
-          </p>
-        </li>
-        <li className='item'>
-          <a
             href='https://juneDaSilva.github.io/shopping-cart/'
             className='project-title'
           >
@@ -34,6 +20,20 @@ const Projects = () => {
           <p className='project-info'>
             React /
             <a href='https://github.com/JuneDaSilva/shopping-cart/blob/main/README.md'>
+              /aboutMe
+            </a>
+          </p>
+        </li>
+        <li className='item'>
+          <a
+            href='https://juneDaSilva.github.io/battleship/'
+            className='project-title'
+          >
+            BATTLESHIP
+          </a>
+          <p className='project-info'>
+            vanillaJs /
+            <a href='https://github.com/juneDaSilva/battleship/blob/main/README.md'>
               /aboutMe
             </a>
           </p>
